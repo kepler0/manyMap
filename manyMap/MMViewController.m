@@ -14,10 +14,12 @@
 
 @implementation MMViewController
 
+@synthesize MapView;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [MapView addSubview:[[MKMapView alloc] initWithFrame:MapView.bounds]];
 }
 
 - (void)didReceiveMemoryWarning
