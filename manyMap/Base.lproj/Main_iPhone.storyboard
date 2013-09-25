@@ -15,13 +15,49 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="lwL-Vk-HEE">
+                                <rect key="frame" x="0.0" y="18" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="oPv-pH-VPP"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="7Rm-uE-qar">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" id="DMN-Rg-lh8"/>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y48-pL-jLm">
+                                <rect key="frame" x="0.0" y="62" width="320" height="462"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Rm-uE-qar" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3JQ-B2-gPg"/>
+                            <constraint firstItem="lwL-Vk-HEE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="top" constant="18" id="Av7-Tw-f13"/>
+                            <constraint firstItem="Y48-pL-jLm" firstAttribute="top" secondItem="lwL-Vk-HEE" secondAttribute="bottom" id="BlK-aI-4jb"/>
+                            <constraint firstItem="lwL-Vk-HEE" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="18" id="Grf-4B-Ht6"/>
+                            <constraint firstAttribute="trailing" secondItem="lwL-Vk-HEE" secondAttribute="trailing" id="JK9-34-Lnj"/>
+                            <constraint firstItem="Y48-pL-jLm" firstAttribute="top" secondItem="lwL-Vk-HEE" secondAttribute="bottom" id="JgX-xY-MjA"/>
+                            <constraint firstAttribute="trailing" secondItem="Y48-pL-jLm" secondAttribute="trailing" id="K6s-ku-kVJ"/>
+                            <constraint firstItem="s4s-bc-NTa" firstAttribute="top" secondItem="7Rm-uE-qar" secondAttribute="bottom" id="S0n-rD-CaG"/>
+                            <constraint firstAttribute="trailing" secondItem="lwL-Vk-HEE" secondAttribute="trailing" id="WOv-cs-LWG"/>
+                            <constraint firstItem="7Rm-uE-qar" firstAttribute="top" secondItem="Y48-pL-jLm" secondAttribute="bottom" id="bam-Qa-paB"/>
+                            <constraint firstAttribute="trailing" secondItem="7Rm-uE-qar" secondAttribute="trailing" id="bzf-IU-dQV"/>
+                            <constraint firstItem="Y48-pL-jLm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="d8z-xp-3ul"/>
+                            <constraint firstItem="lwL-Vk-HEE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="dVE-ks-gZU"/>
+                            <constraint firstItem="Y48-pL-jLm" firstAttribute="top" secondItem="lwL-Vk-HEE" secondAttribute="bottom" id="fHB-jH-6K2"/>
+                            <constraint firstItem="7Rm-uE-qar" firstAttribute="top" secondItem="Y48-pL-jLm" secondAttribute="bottom" id="jM8-Ud-0K0"/>
+                            <constraint firstItem="lwL-Vk-HEE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="rJ8-jJ-8bL"/>
+                        </constraints>
                     </view>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <connections>
-                        <outlet property="MapView" destination="kh9-bI-dsS" id="Qas-bG-Fgj"/>
+                        <outlet property="MapView" destination="Y48-pL-jLm" id="Zjf-Zv-C59"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
