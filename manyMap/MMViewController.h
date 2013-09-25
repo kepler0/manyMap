@@ -10,4 +10,6 @@
 
 @interface MMViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIView *MapView;
+
 @end
